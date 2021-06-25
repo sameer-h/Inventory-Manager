@@ -1,4 +1,3 @@
-/* Sameer Hussain - IB Computer Science 1 - Match 13, 2018 - This program is the home frame*/
 
 //package hussainiaproject;
 
