@@ -1,5 +1,3 @@
-/* Sameer Hussain - IB Computer Science 1 - Match 13, 2018 - This program is an error frame*/
-
 //package hussainiaproject;
 
 import java.awt.BorderLayout;
