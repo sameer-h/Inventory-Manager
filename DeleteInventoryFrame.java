@@ -1,4 +1,3 @@
-/* Sameer Hussain - IB Computer Science 1 - Match 13, 2018 - This program deletes info from Table 1*/
 
 //package hussainiaproject;
 
