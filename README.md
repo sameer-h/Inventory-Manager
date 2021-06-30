@@ -77,7 +77,7 @@ public class JavaDb {
   SET itemCount=?
   WHERE itemName=?
  ```
-### Delete
+#### Delete
 ``` SQL
 DELETE FROM Inventory WHERE itemName=?
 ```
