@@ -66,8 +66,21 @@ public class JavaDb {
 ```
 
 ### SQL Commands for Insert, Update, Deleting Data
+ #### Insert
+ ``` SQL
+ INSERT INTO Inventory (itemName, itemCount)
+ VALUES (?,?)
+ ```
+  #### Update
 ``` SQL
   UPDATE Inventory
-  ```
+  SET itemCount=?
+  WHERE itemName=?
+ ```
+### Delete
+``` SQL
+DELETE FROM Inventory WHERE itemName=?
+```
+ 
 
 
