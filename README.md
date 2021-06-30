@@ -39,10 +39,30 @@ import javax.swing.*;
 The tables: Inventory, LabList, and LabNeeds are ones that hold values for the lab stock, list of labs, and each lab’s requirements, respectively.
 These tables are normalized to the third normal form (3NF) to reduce the duplication of data​ and ensure referential integrity by having 2NF and all the attributes in a table are determined only by the primary keys of that relationship and not by any non-prime structures.
 
+### Constructors and Encapsulation
+``` java
+public class JavaDb {
+  
+  private String dbName;
+  private Object[][] data;
+  private Connection dbConn;
+  
+  public JavaDb(String dbName)
+  {
+    this.dbName = dbName;
+    this.data = null;
+    setDbConn();
+  }
+  
+  public JavaDb()
+  {
+    this.dbName = "";
+    this.data = null;
+    this.dbConn = null;
+  }
+  
+  ...
 
-
-
-
-
+```
 
 
