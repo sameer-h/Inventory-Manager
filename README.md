@@ -83,7 +83,7 @@ DELETE FROM Inventory WHERE itemName=?
 ```
 
 ### Challenges
-Getting data from the database and using it within algorithms proved to be a challenge, though I accomplished this through the following code
+Getting data from objects in the database and using it within algorithms proved to be a challenge, though I accomplished this through the following code
 ``` java
     public Object[][] getData(String tableName, String[] tableHeaders) 
     {
