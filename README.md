@@ -65,4 +65,9 @@ public class JavaDb {
 
 ```
 
+### SQL Commands for Insert, Update, Deleting Data
+``` SQL
+  UPDATE Inventory
+  ```
+
 
