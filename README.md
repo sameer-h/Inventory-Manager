@@ -81,6 +81,49 @@ public class JavaDb {
 ``` SQL
 DELETE FROM Inventory WHERE itemName=?
 ```
+
+### Challenges
+Getting data from the database and using it within algorithms proved to be a challenge, though I accomplished this through the following code
+``` java
+    public Object[][] getData(String tableName, String[] tableHeaders) 
+    {
+        int columnCount = tableHeaders.length;
+        ResultSet rs = null;
+        Statement s = null;
+        String dbQuery = "SELECT * FROM " + tableName;
+        ArrayList<ArrayList<String>> dataList = new ArrayList<>(); //ArrayList for the data from rows and columns
+        
+        try
+        {
+            s = this.dbConn.createStatement(); //JDBC Statements
+            rs = s.executeQuery(dbQuery);
+            while(rs.next())
+            {
+                ArrayList<String> row = new ArrayList<>();
+                for(int i=0; i<columnCount; i++)
+                {
+                    row.add(rs.getString(tableHeaders[i])); // Loop to get the data from columns and rows
+                }
+                dataList.add(row);
+            }
+            this.data = new Object[dataList.size()][columnCount];
+            for (int i=0; i<dataList.size(); i++)
+            {
+                ArrayList<String> row = new ArrayList<>();
+                row = dataList.get(i);
+                for (int j=0; j<columnCount; j++)
+                {
+                    this.data[i][j] = row.get(j);
+                }
+            }  
+        }
+        catch(Exception e)
+        {
+            System.exit(0);
+        }
+        return data;
+    }
+```
  
 
 
