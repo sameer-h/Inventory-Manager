@@ -4,6 +4,8 @@ This application is a project that I've created using Java and SQL through the [
 
 Additionally this application utilizes a GUI using [AWT](https://en.wikipedia.org/wiki/Abstract_Window_Toolkit) and [Swing](https://docs.oracle.com/javase/tutorial/uiswing/) which are both toolkits.
 
+This project allows a person to locally store, edit, update, delete object data through a relational DBMS and also perform functions and simple analyses on that data in the form of inventory assessment and upkeep.
+
 ## How to Run
 1. Download Product.zip and extract contents into a folder
 
